@@ -19,8 +19,12 @@ import cv2
 import numpy as np
 import os
 import sys
-import win32gui
-import win32con
+
+IS_WINDOWS = sys.platform.startswith('win32')
+
+if IS_WINDOWS:
+    import win32gui
+    import win32con
 
 class MaskCreator:
     def __init__(self, image_folder):
@@ -70,7 +74,9 @@ class MaskCreator:
         cv2.namedWindow('Mask Creator', cv2.WINDOW_NORMAL)
         cv2.resizeWindow('Mask Creator', 1280, 720)
         cv2.setMouseCallback('Mask Creator', self.handle_mouse)
-        self._set_minimum_window_size(800, 600)
+        
+        if IS_WINDOWS:
+            self._set_minimum_window_size(800, 600)
 
         # Load the first image
         self.load_image()
