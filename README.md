@@ -3,6 +3,9 @@
 
 A Python/OpenCV-based application for quickly creating binary masks by drawing directly on images.
 
+![image](https://github.com/user-attachments/assets/144a241d-8784-41a8-bcb9-029fd5978a55)
+
+
 ## Features
 
 * Draw mask areas with left-click drag
