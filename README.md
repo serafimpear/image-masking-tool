@@ -48,4 +48,4 @@ This masking tool can be especially helpful when working with RealityCapture, wh
 
 ## License
 
-Licensed under the MIT License. See [LICENSE](https://chatgpt.com/c/LICENSE) for details.
+Licensed under the MIT License. See [LICENSE](LICENSE) for details.
